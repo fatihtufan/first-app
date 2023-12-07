@@ -1,15 +1,12 @@
 import './App.css';
+import User from './components/User';
 
-const name = "Fatih";
-const surname = "Tufan";
-const isLoggedIn = false;
+
 
 function App() {
   return (
     <>
-      <h1>
-        {isLoggedIn ? `Benim Adım:${name}, Soyadım:${surname}` : `giriş yapmadınız.`}</h1> 
-
+    <User name="Fatih" surname="Tufan" isLoggedIn={true} age={29}/>
     </>
   );
 }
