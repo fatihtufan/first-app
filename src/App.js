@@ -23,7 +23,7 @@ function App() {
         name="Fatih"
         surname="Tufan"
         isLoggedIn={true}
-        age={29}
+        age={"29"}
         friends={friends}
       />
     </>
