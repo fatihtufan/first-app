@@ -3,15 +3,15 @@ import User from './components/User';
 
 const friends = [
   {
-    id:1,
+    id: 1,
     name: 'Ahmet'
   },
   {
-    id:2,
+    id: 2,
     name: 'Mehmet'
   },
   {
-    id:3,
+    id: 3,
     name: 'Ali'
   },
 ];
@@ -25,6 +25,10 @@ function App() {
         isLoggedIn={true}
         age={"29"}
         friends={friends}
+        address={{
+          title: 'Çankaya/Ankara',
+          zip: 34755
+        }}
       />
     </>
   );
