@@ -16,10 +16,10 @@ function User({ name, surname, age, isLoggedIn, friends }) {
 }
 
 User.propTypes = {
-    name: PropsTypes.string,
-    surname: PropsTypes.string,
-    isLoggedIn: PropsTypes.bool,
-    age: PropsTypes.number,
+    name: PropsTypes.string.isRequired, // isRequired ile zorunlu alan olduğunu belirtmiş oluruz
+    surname: PropsTypes.string.isRequired,
+    isLoggedIn: PropsTypes.bool.isRequired,
+    age: PropsTypes.number.isRequired,
     friends: PropsTypes.array,
 
 };
