@@ -1,3 +1,7 @@
+import PropsTypes from "prop-types";
+
+
+
 function User({ name, surname, age, isLoggedIn, friends }) {
     return (
         <>
@@ -10,5 +14,14 @@ function User({ name, surname, age, isLoggedIn, friends }) {
         </>
     );
 }
+
+User.propTypes = {
+    name: PropsTypes.string,
+    surname: PropsTypes.string,
+    isLoggedIn: PropsTypes.bool,
+    age: PropsTypes.number,
+    friends: PropsTypes.array,
+
+};
 
 export default User;
