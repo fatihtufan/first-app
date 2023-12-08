@@ -3,9 +3,13 @@ import PropsTypes from "prop-types";
 
 
 function User({ name, surname, age, isLoggedIn, friends, address }) {
+    if (!isLoggedIn) {
+        return <div>Giriş Yapmadınız</div>;
+    }
+
     return (
         <>
-            <h1>{isLoggedIn ? `${name} ${surname} (${age})` : "Giriş Yapmadınız."}</h1>
+            <h1>{`${name} ${surname} (${age})`}</h1>
             <h2>{address.title} {address.zip}</h2>
 
             {friends &&
@@ -32,5 +36,11 @@ User.propTypes = {
     })
 
 };
+
+
+User.defaultProps = {
+    name:"İsimsiz",
+    isLoggedIn: false
+}
 
 export default User;

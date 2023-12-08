@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <User
-        name="Fatih"
+        // name="Fatih"
         surname="Tufan"
         isLoggedIn={true}
         age={"29"}
